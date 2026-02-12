@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Request Form for Certification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>
+        REQUEST FORM FOR BAPTISMAL, CONFIRMATION, MARRIAGE<br>
+        AND OTHER CERTIFICATION
+    </h2>
+
+    <form id="certForm">
+        <fieldset>
+            <legend>Please check certificate to be requested</legend>
+
+            <label><input type="checkbox" class="cert"> Certificate of Baptism (Binyag)</label>
+            <label><input type="checkbox" class="cert"> Certificate of Confirmation (Kumpil)</label>
+            <label><input type="checkbox" class="cert"> Certificate of Marriage (Kasal)</label>
+            <label><input type="checkbox" class="cert"> Certification of No Record</label>
+            <label><input type="checkbox" class="cert"> Permission for Baptism</label>
+            <label>Others: <input type="text" id="others"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label>Name:
+                <input type="text" id="name">
+            </label>
+
+            <label>Date of Birth:
+                <input type="date" id="dob">
+            </label>
+
+            <label>Date of Baptism:
+                <input type="date" id="baptism">
+            </label>
+
+            <label>Date of Confirmation:
+                <input type="date" id="confirmation">
+            </label>
+
+            <label>Date of Marriage:
+                <input type="date" id="marriage">
+            </label>
+
+            <label>Father's Name:
+                <input type="text" id="father">
+            </label>
+
+            <label>Mother's Name:
+                <input type="text" id="mother">
+            </label>
+
+            <label>Requested By:
+                <input type="text" id="requestedBy">
+            </label>
+
+            <label>Purpose:
+                <input type="text" id="purpose">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>For Marriage Purposes</legend>
+
+            <label>Name of Bride or Groom:
+                <input type="text" id="brideGroom">
+            </label>
+
+            <label>Date of Wedding:
+                <input type="date" id="weddingDate">
+            </label>
+
+            <label>Church of Wedding:
+                <input type="text" id="churchWedding">
+            </label>
+        </fieldset>
+
+        <button type="submit">Submit Request</button>
+    </form>
+
+    <div class="footer">Basilica Minore de San Pedro Bautista</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
