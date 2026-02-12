@@ -1,1 +1,245 @@
+/* Brown and White Theme */
+:root {
+  --main-theme: #8B4513; /* Saddle Brown - Primary theme color for navbar and accents */
+  --secondary-color: #FFFFFF; /* White - For backgrounds and text on dark elements */
+  --accent-color: #D2B48C; /* Tan - Light brown for subtle accents and highlights */
+  --light-bg: #F5F5DC; /* Beige - Soft background for sections to create warmth */
+  --text-color: #333333; /* Dark Gray - For readable text on light backgrounds */
+  --muted-text: #666666; /* Muted Gray - For secondary text */
+  --shadow: rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
 
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Crimson Text', serif; /* Elegant serif font for body text, pleasing to all ages */
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--secondary-color); /* White background for a clean look */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cinzel', serif; /* Regal serif font for headings, timeless and appealing */
+  color: var(--main-theme); /* Brown headings for consistency */
+  margin-bottom: 1rem;
+}
+
+/* Links */
+a {
+  color: var(--main-theme);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+/* Navigation */
+.navbar {
+  background-color: var(--main-theme) !important; /* Brown navbar */
+  box-shadow: 0 2px 4px var(--shadow); /* Subtle shadow for depth */
+}
+
+.navbar-brand {
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  color: var(--secondary-color) !important; /* White text */
+}
+
+.navbar-nav .nav-link {
+  color: var(--secondary-color) !important; /* White text */
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: var(--accent-color); /* Light brown hover */
+  color: var(--main-theme) !important; /* Brown text on hover */
+}
+
+.dropdown-menu {
+  background-color: var(--secondary-color); /* White dropdown */
+  border: 1px solid var(--accent-color);
+}
+
+.dropdown-item {
+  color: var(--text-color);
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: var(--light-bg); /* Beige hover */
+  color: var(--main-theme);
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, var(--main-theme) 0%, var(--accent-color) 100%); /* Brown to tan gradient for warmth */
+  padding: 0; /* Adjust for fixed navbar */
+  color: var(--secondary-color); /* White text */
+  text-align: center;
+  position: relative;
+}
+
+/* .hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('path/to/subtle-church-image.jpg'); /* Optional: Add a subtle background image if available */
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1; /* Very light overlay for texture */
+  z-index: -1;
+} */
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+  text-shadow: 2px 2px 4px var(--shadow); /* Subtle shadow for readability */
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  color: var(--secondary-color);
+}
+
+.hero-section .btn {
+  background-color: var(--secondary-color);
+  color: var(--main-theme);
+  border: 2px solid var(--secondary-color);
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.hero-section .btn:hover {
+  background-color: var(--main-theme);
+  color: var(--secondary-color);
+  border-color: var(--main-theme);
+}
+
+/* Intro Section */
+#home-intro {
+  background-color: var(--light-bg); /* Beige background for warmth */
+  padding: 60px 0;
+}
+
+#home-intro h2 {
+  color: var(--main-theme);
+}
+
+#home-intro p {
+  color: var(--muted-text);
+}
+
+/* Featured Section */
+.bg-light {
+  background-color: var(--secondary-color) !important; /* Override Bootstrap's light bg */
+  padding: 60px 0;
+}
+
+.featured-section .col-md-4 {
+  padding: 20px;
+}
+
+.featured-section i {
+  color: var(--main-theme);
+}
+
+.featured-section h4 {
+  color: var(--main-theme);
+  margin-top: 1rem;
+}
+
+.featured-section p {
+  color: var(--muted-text);
+}
+
+/* About Page Styles */
+main.container {
+  margin-top: 80px; /* Account for fixed navbar */
+}
+
+.card {
+  border: 1px solid var(--accent-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px var(--shadow);
+  background-color: var(--secondary-color);
+}
+
+.card-body h5 {
+  color: var(--main-theme);
+}
+
+.card-body p {
+  color: var(--text-color);
+}
+
+/* Quick Info Card */
+.card-body i {
+  color: var(--main-theme);
+}
+
+/* Buttons */
+.btn {
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.carousel-item img {
+  height: 70vh; /* Fixed height for prominence */
+  object-fit: cover; /* Scales images without distortion */
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for readability */
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.carousel-caption h1, .carousel-caption p {
+  color: var(--secondary-color); /* White text */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Shadow for contrast */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+  
+  .hero-section p {
+    font-size: 1rem;
+  }
+  
+  .navbar-nav {
+    text-align: center;
+  }
+}
+
+/* Accessibility Enhancements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus Styles for Keyboard Navigation */
+.navbar-nav .nav-link:focus,
+.dropdown-item:focus,
+.btn:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
