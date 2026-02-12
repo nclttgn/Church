@@ -69,10 +69,51 @@
 
   <!-- Hero Section -->
 <section class="hero-section">
-  <div class="container text-center text-white">
-    <h1 class="display-4">Welcome to San Pedro Bautista Church</h1>
-    <p class="lead">A place of love, faith, and hope</p>
-    <a href="#services" class="btn btn-light btn-lg mt-3">Join Our Service</a>
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators (optional dots for navigation) -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    
+    <!-- Carousel Items -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/church1.jpg" class="d-block w-100" alt="Church Exterior">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="display-4">Welcome to San Pedro Bautista Church</h1>
+          <p class="lead">A place of love, faith, and hope</p>
+          <a href="#services" class="btn btn-light btn-lg mt-3">Join Our Service</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/church2.jpg" class="d-block w-100" alt="Church Interior">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="display-4">Welcome to San Pedro Bautista Church</h1>
+          <p class="lead">A place of love, faith, and hope</p>
+          <a href="#services" class="btn btn-light btn-lg mt-3">Join Our Service</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/church3.jpg" class="d-block w-100" alt="Community Event">
+        <div class="carousel-caption d-none d-md-block">
+          <h1 class="display-4">Welcome to San Pedro Bautista Church</h1>
+          <p class="lead">A place of love, faith, and hope</p>
+          <a href="#services" class="btn btn-light btn-lg mt-3">Join Our Service</a>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Controls (optional arrows) -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
   </div>
 </section>
 
