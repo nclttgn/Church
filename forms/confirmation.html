@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmation Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>REGISTRATION FORM FOR CONFIRMATION</h2>
+    <h4>Basilica Minore de San Pedro Bautista</h4>
+
+    <form id="confirmationForm">
+
+        <fieldset>
+            <legend>Confirmation Schedule</legend>
+            <label>Date of Confirmation:
+                <input type="date" id="confirmDate">
+            </label>
+            <label>Time:
+                <input type="text" id="confirmTime">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Child Information</legend>
+
+            <label>First Name:
+                <input type="text" id="firstName">
+            </label>
+
+            <label>Middle Name:
+                <input type="text" id="middleName">
+            </label>
+
+            <label>Surname:
+                <input type="text" id="surname">
+            </label>
+
+            <label>Date of Birth:
+                <input type="date" id="dob">
+            </label>
+
+            <label>Place of Birth:
+                <input type="text" id="birthPlace">
+            </label>
+
+            <label>Gender:
+                <input type="text" id="gender">
+            </label>
+
+            <label>Current Age:
+                <input type="number" id="age">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Baptism Information</legend>
+
+            <label>Date of Baptism:
+                <input type="date" id="baptismDate">
+            </label>
+
+            <label>Church / Parish of Baptism:
+                <input type="text" id="baptismChurch">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Parents Information</legend>
+
+            <label>Father's Full Name:
+                <input type="text" id="fatherName">
+            </label>
+
+            <label>Mother's Maiden Name:
+                <input type="text" id="motherName">
+            </label>
+
+            <label>Address:
+                <input type="text" id="address">
+            </label>
+
+            <label>Parish:
+                <input type="text" id="parish">
+            </label>
+
+            <label>Contact Number:
+                <input type="text" id="contact">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sponsors</legend>
+
+            <label>Full Name of Sponsors:
+                <input type="text" id="sponsors">
+            </label>
+
+            <label>Address of Sponsors:
+                <input type="text" id="sponsorAddress">
+            </label>
+
+            <label>Additional Sponsors:
+                <input type="text" id="additionalSponsors">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Checklist of Requirements</legend>
+            <label><input type="checkbox" class="req"> Certificate of Baptism</label>
+            <label><input type="checkbox" class="req"> Attendance to Pre-Sacramental Seminar</label>
+
+            <label>Date:
+                <input type="date" id="reqDate">
+            </label>
+
+            <label>Signature of Catechist:
+                <input type="text" id="catechist">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Office Use Only</legend>
+
+            <label>Notes:
+                <input type="text" id="notes">
+            </label>
+
+            <label>Received By:
+                <input type="text" id="receivedBy">
+            </label>
+
+            <label>Date Registered:
+                <input type="date" id="dateRegistered">
+            </label>
+
+            <label>Minister of Confirmation:
+                <input type="text" id="minister">
+            </label>
+        </fieldset>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
